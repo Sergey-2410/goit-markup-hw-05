@@ -528,7 +528,7 @@ img {
 /*modal window*/
 
 .modal-overlay {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(46, 47, 66, 0.4);
   position: fixed;
   top: 0;
   left: 0;
@@ -540,50 +540,60 @@ img {
   align-items: center;
   opacity: 0;
   pointer-events: none;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-overlay.is-open {
   opacity: 1;
   pointer-events: auto;
 }
 .modal {
-  background-color: #fff;
+  background: #fcfcfc;
   border-radius: 4px;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12),
     0 2px 1px 0 rgba(0, 0, 0, 0.2);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   padding: 24px;
   width: 408px;
-  height: 584px;
+  min-height: 584px;
   overflow-y: auto;
 }
-.close {
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  border-radius: 100%;
+.button-close {
+  top: 24px;
+  right: 24px;
   width: 24px;
   height: 24px;
-  background-color: #e7e9fc;
+  border-radius: 50%;
   display: flex;
-  justify-content: center;
   align-items: center;
-  margin-bottom: 24px;
+  justify-content: center;
+  background-color: #e7e9fc;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 0;
+  cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
   margin-left: 336px;
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  margin-bottom: 24px;
 }
-.close-svg {
-  fill: #2e2f42;
-}
-.close:hover {
+.button-close:hover {
   background-color: #404bbf;
-}
-.close-svg:hover {
-  fill: #fff;
-}
-.close:focus {
-  background-color: #404bbf;
-}
-.close-svg:focus {
-  fill: #fff;
+  border: none;
 }
 
+.button-close:focus {
+  background-color: #404bbf;
+  border: none;
+}
+.close-svg {
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.close-svg:hover {
+  fill: #ffffff;
+}
+.close-svg:focus {
+  fill: #ffffff;
+}
 .modal-text {
   font-weight: 500;
   font-size: 16px;
