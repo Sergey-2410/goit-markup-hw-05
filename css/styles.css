@@ -648,8 +648,7 @@ img {
   border-color: #4d5ae5;
 }
 
-.input:focus + .svg-form,
-.input:hover + .svg-form {
+.input:focus + .svg-form {
   fill: #4d5ae5;
 }
 .input-comment {
