@@ -626,8 +626,10 @@ img {
   display: block;
   margin-bottom: 4px;
 }
-.box-iconname {
+.box-item-name {
   position: relative;
+}
+.box-iconname {
 }
 .svg-form {
   position: absolute;
