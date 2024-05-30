@@ -626,10 +626,10 @@ img {
   display: block;
   margin-bottom: 4px;
 }
-.box-item-name {
+.box-input {
+  position: relative;
 }
 .box-iconname {
-  position: relative;
 }
 .svg-form {
   position: absolute;
