@@ -630,6 +630,7 @@ img {
   position: relative;
 }
 .box-iconname {
+  position: relative;
 }
 .svg-form {
   position: absolute;
