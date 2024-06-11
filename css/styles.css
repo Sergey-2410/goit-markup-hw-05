@@ -445,14 +445,7 @@ img {
 .media {
   margin-right: 80px;
 }
-.title-media {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: #ffffff;
-  margin-bottom: 16px;
-}
+
 .media-list {
   display: flex;
   gap: 16px;
@@ -481,6 +474,14 @@ img {
 }
 .box-subscribe {
 }
+.title-media {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+  margin-bottom: 16px;
+}
 .form-subscribe {
   display: flex;
   gap: 24px;
@@ -502,7 +503,6 @@ img {
 
 .button-subscribe {
   min-width: 165px;
-  height: 40px;
   height: 40px;
   display: flex;
   justify-content: center;
